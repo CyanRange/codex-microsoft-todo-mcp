@@ -1,0 +1,26 @@
+{
+  "name": "local-microsoft-todo-mcp",
+  "version": "0.1.0",
+  "description": "A local MCP server that connects Codex and other MCP clients to Microsoft To Do through Microsoft Graph.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "microsoft-todo",
+    "microsoft-graph",
+    "codex"
+  ],
+  "scripts": {
+    "login": "node src/login.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^5.5.0",
+    "@modelcontextprotocol/sdk": "^1.17.2",
+    "zod": "^3.25.76"
+  }
+}
